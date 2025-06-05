@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonte Roboto -->
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('midias/Sesi Rondonopolis site.jpg') center/cover no-repeat;
+            color: white; /* Define o texto como branco para contraste */
+            font-family: 'Roboto', sans-serif; /* Define a fonte Roboto */
+        }
+        .login-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.571); /* Fundo semitransparente para destacar o conteúdo */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button {
+            background: #5f2525;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto aos botões */
+        }
+        button:hover {
+            background: #e22c2c;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bem-vindo</h1>
+        <button onclick="window.location.href='loginAluno.html'">Sou Aluno</button>
+        <button onclick="window.location.href='loginProfessor.html'">Sou Professor</button>
+    </div>
+</body>
+</html>

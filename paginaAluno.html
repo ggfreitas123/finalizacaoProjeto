@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h2>Área do Aluno</h2>
+        <div id="userInfo"></div>
+    </div>
+
+    <div class="sidebar">
+        <a href="#" onclick="abrirPerfil()">Perfil</a>
+    </div>
+
+    <div class="container">
+        <div class="card" onclick="abrirMateria('portugues')">Língua Portuguesa</div>
+        <div class="card" onclick="abrirMateria('matematica')">Matemática</div>
+        <div class="card" onclick="abrirMateria('geografia')">Geografia</div>
+        <div class="card" onclick="abrirMateria('fisica')">Física</div>
+        <div class="card" onclick="abrirMateria('biologia')">Biologia</div>
+        <div class="card" onclick="abrirMateria('quimica')">Quimica</div>
+    </div>
+
+    <div id="perfilOverlay" class="overlay">
+        <div class="perfilContent">
+            <h2>Perfil</h2>
+            <div id="dadosPerfil"></div>
+            <button onclick="sair()">Sair</button>
+            <button onclick="fecharPerfil()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

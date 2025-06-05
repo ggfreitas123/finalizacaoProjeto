@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Define a fonte Roboto */
+}
+.body_loginAluno{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../midias/Banner-Site-2---RH.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+}
+
+.sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background: #444;
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+    button{
+        background-color: red;
+        color: white;
+    }
+}
+.top-links a, 
+.bottom-links a {
+    color: white;
+    display: block;
+    margin-bottom: 35px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card {
+    background: #eee;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+}
+
+.card:hover {
+    background: #ddd;
+}
+
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #00263bb9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container input, select {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.perfil-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-area .card {
+    width: 200px;
+}
+.sair{
+    display: flex;
+}
+
+.sair img{
+    width: 20px;
+    height: 20px;
+}
+
+.conta{
+    display: flex;
+}
+
+.conta img{
+    width: 25px;
+    height: 19px;
+}
+
+.cursos{
+    display: flex;
+}
+
+.cursos img{
+    width: 15px;
+    height: 20px;
+    margin-left: 2px;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left; /* Alinha o texto à esquerda */
+    overflow-y: auto; /* Adiciona barra de rolagem se o conteúdo for muito grande */
+    max-height: 80%; /* Limita a altura máxima do modal */
+}
+
+.modal-content p {
+    white-space: pre-wrap; /* Mantém quebras de linha no conteúdo */
+    word-wrap: break-word; /* Quebra palavras longas */
+    margin: 10px 0; /* Adiciona espaçamento entre parágrafos */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

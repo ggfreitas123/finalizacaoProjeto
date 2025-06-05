@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Aluno</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h1, h2{
+            color: rgb(133, 109, 161);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(16, 2, 80);
+        }
+        button{
+            background-color: rgb(98, 109, 159);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body class="body_loginAluno">
+    <div class="login-container">
+        <hr>
+        <h2>Login Aluno</h2>
+        <hr>
+        <br>
+        <input type="text" id="loginAluno" placeholder="Login">
+        <input type="password" id="senhaAluno" placeholder="Senha">
+        <br><br>
+        <button onclick="loginAluno()">Entrar</button>
+        <br><br>
+        <hr>
+        <h2>Cadastro</h2>
+        <hr>
+        <br>
+        <input type="text" id="rmAluno" placeholder="RM (4 dígitos)">
+        <input type="email" id="emailAluno" placeholder="Email">
+        <input type="text" id="loginNovoAluno" placeholder="Login">
+        <input type="password" id="senhaNovoAluno" placeholder="Senha">
+        <input type="text" id="anoAluno" placeholder="Ano">
+        <br><br>
+        <button onclick="cadastrarAluno()" style="margin-right: 10px;">Cadastrar</button>
+
+        <button onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
